@@ -1,0 +1,74 @@
+body {
+    margin:0%;
+    background-color: whitesmoke;
+}
+
+input {
+    width:200px;
+    min-width:100px;
+    border:none;
+    background-color: white;
+    border-bottom: 1px solid gray;
+    height:30px;
+    padding:10px;    
+    margin-bottom:10px;
+    resize: vertical;
+}
+
+input, label, p, #district {
+    font-size:15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#district {
+    height:30px;
+}
+
+input:focus {
+    outline:none;    
+    border-bottom: 2px solid red;
+}
+
+input[name^="option"] {
+    width: 15px;
+    height: 15px;
+}
+
+button {
+    position:relative;
+    left:30px;
+    display:block;
+    width:80px;
+    margin:20px;
+    border-radius: 4px;
+    height:30px;
+    color:white;
+    font-size:16px;
+    background-color: blueviolet;
+    float:left;
+    border:none;    
+    left:40%;
+}
+
+form {
+    margin-top: 1%;
+    margin-left:1.5%;
+    position:relative;
+    width:80%;
+    min-width: 750px;
+    height: 500px;
+    overflow-y: auto;
+    left:7%;
+    padding-left:40px;
+    box-shadow: 0px 0px 20px gray;
+}
+
+form img {
+    position:sticky;
+    float:right;
+    width:50%;
+    min-width:0%;
+    height:100%;
+    top:0%;
+    z-index:-1;
+}

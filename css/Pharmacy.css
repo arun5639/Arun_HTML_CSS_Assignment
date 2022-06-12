@@ -1,0 +1,162 @@
+body {
+    margin:0;
+    overflow-x: hidden;
+}
+
+header {
+    margin:0%;
+    padding: 1px;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family:'Times New Roman', Times, serif;
+    background-color:black;
+    width: 100%;
+}
+
+footer {
+    background-color:black;
+    color: white;
+    text-align: center;
+    padding:3px;
+    font-family: 'Times New Roman', Times, serif;
+    bottom: 0;
+    position:relative;
+    width:100%;
+}
+
+.menu {
+    position: sticky;
+    top:0%;
+}
+
+nav ul {
+    margin:0;
+    padding:0; 
+    background-color: gray;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    background-color: gray;
+}
+
+nav ul li a {
+    padding: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 40px;
+    display: block;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background: black;
+}
+
+
+nav ul ul {
+    position: absolute;
+    top:60 px;
+    display: none;
+}
+
+ 
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul ul li {
+    width: 165px;
+    display: inline-block;
+    display: list-item;
+}
+
+nav ul ul li a {
+    color:blue;
+    background-color:rgb(239, 234, 234);
+}  
+
+#slides {
+    animation-name: image-change;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    border: 2px solid steelblue;
+    margin:auto;
+    width: 100%;
+    height: 400px;
+}
+
+@keyframes image-change {
+    0% {
+        background-image: url(ani1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    25% {
+        background-image: url(ani2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    50% {
+        background-image: url(ani3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    75% {
+        background-image: url(ani4.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    100% {
+        background-image: url(ani5.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.product {
+    padding: 5px;
+    width: 14%;
+    min-width: 140px;
+    min-height: 180px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 3px;    
+    background-color:aliceblue;    
+    box-shadow: 5px 5px 5px gainsboro;
+}
+
+.product > p{
+    font-size: 14px;
+    color: blue;
+}
+
+.product img {
+    width: 98%;
+    height: 100px;
+}
+
+.product button {
+    width: 100%;
+    background-color: lavender;
+    border: 1px solid blue;
+    border-radius: 5px;
+    color: orange;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.product:hover {
+    -webkit-transform: scale(1.05,1.05);
+    transform: scale(1.05,1.05);
+}
+
+.product button:active {
+    background-color: rgb(250,234,230);
+    border: rgb(0,255,76);
+}
